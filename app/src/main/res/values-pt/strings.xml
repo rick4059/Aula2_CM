@@ -2,4 +2,6 @@
 <resources>
     <string name="app_name">Aula2</string>
     <string name="Welcome_Message" translatable="false">Espero que esteja a ter um bom dia!</string>
+    <string name="Titulo_Desafio">Desafio da Aula</string>
+    <string name="Footer_Desafio">***Ricardo Ferreira***</string>
 </resources>
