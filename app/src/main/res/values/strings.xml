@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Aula2</string>
+    <string name="Welcome_Message" translatable="false">I hope you are having a good day!</string>
 </resources>
