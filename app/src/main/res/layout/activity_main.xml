@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
@@ -14,21 +13,47 @@
         android:padding="15dp"
         android:layout_margin="5dp"
         android:background="#333"
-        android:textColor="FFF"
+        android:textColor="#FFF"
         android:text="TESTE"/>
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textView1"
         android:text="TESTE"
         android:padding="15dp"
         android:layout_margin="5dp"
         android:background="#333"
-        android:textColor="FFF"/>
+        android:textColor="#FFF"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calendario"
+        android:layout_alignParentRight="true"
+        android:text="TESTE"
+        android:padding="15dp"
+        android:layout_margin="5dp"
+        android:background="#333"
+        android:textColor="#FFF"/>
+
+    <CalendarView
+        android:id="@+id/calendario"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </CalendarView>
+
+
     <LinearLayout
+        android:id="@+id/ll1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:orientation="horizontal">
 
         <Button
@@ -36,7 +61,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="BTN"
+            android:text="Back"
             android:layout_margin="10dp"></Button>
 
         <Button
@@ -44,9 +69,10 @@
             android:layout_width="0dp"
             android:layout_weight="2"
             android:layout_height="wrap_content"
-            android:text="BTN2"
+            android:background="@color/teal_700"
+            android:text="Next"
             android:layout_margin="10dp"></Button>
 
     </LinearLayout>
 
-</LinearLayout>
+</RelativeLayout>
