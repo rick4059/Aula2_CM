@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
         println("life cicle: onCreate")
 
         Toast.makeText(this, R.string.Welcome_Message, Toast.LENGTH_SHORT).show()
+
     }
 
     override fun onStart() {
