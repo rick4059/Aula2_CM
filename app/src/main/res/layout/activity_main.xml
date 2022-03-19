@@ -10,34 +10,35 @@
     <TextView
         android:id="@+id/textview1"
         android:layout_width="wrap_content"
-        android:layout_margin="15dp"
         android:layout_height="wrap_content"
-        android:text="@string/Welcome_Message"
-        />
+        android:layout_margin="15dp"
+        android:text="@string/Welcome_Message" />
+
     <TextView
         android:id="@+id/textview2"
-        android:layout_margin="15dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Welcome_Message"
-        />
+        android:layout_margin="15dp"
+        android:text="@string/Welcome_Message" />
+
     <TextView
         android:id="@+id/textview3"
-        android:layout_margin="15dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Welcome_Message"
-        />
+        android:layout_margin="15dp"
+        android:text="@string/Welcome_Message" />
+
     <TextView
         android:id="@+id/textview4"
-        android:layout_margin="15dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Welcome_Message"
-        />
+        android:layout_margin="15dp"
+        android:text="@string/Welcome_Message" />
+
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:id="@+id/ll1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <EditText
@@ -52,9 +53,38 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
-            android:text="Butão 1"
-            android:onClick="butao"></Button>
+            android:onClick="butao"
+            android:text="Butão 1"></Button>
 
     </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ll1">
+
+        <Button
+            android:id="@+id/nova_atividade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="15dp"
+            android:layout_marginBottom="15dp"
+            android:onClick="butao_nova_atividade"
+            android:text="Nova Atividade!"></Button>
+
+        <Button
+            android:id="@+id/nova_atividade2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:onClick="butao_nova_atividade"
+            android:text="TEste!!!"></Button>
+    </RelativeLayout>
 
 </LinearLayout>
