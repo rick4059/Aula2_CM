@@ -3,8 +3,7 @@ package com.example.aula2
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.ActionMode
-import android.view.View
+import android.view.*
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
@@ -59,4 +58,37 @@ class MainActivity : AppCompatActivity() {
         }
         startActivity(intent)
     }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        val inflater: MenuInflater = menuInflater
+        inflater.inflate(R.menu.menu, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId){
+            R.id.create_new ->{
+                Toast.makeText(this, "Ficheiro Criado", Toast.LENGTH_SHORT).show()
+                true
+            }
+            R.id.open ->{
+                Toast.makeText(this, "Ficheiro Aberto", Toast.LENGTH_SHORT).show()
+                true
+            }
+            R.id.opcao2->{
+                Toast.makeText(this, "Opção 2", Toast.LENGTH_SHORT).show()
+                true
+            }
+            R.id.opcao3 ->{
+                Toast.makeText(this, "Opção 3", Toast.LENGTH_SHORT).show()
+                true
+            }
+            R.id.opcao4 ->{
+                Toast.makeText(this, "Opção 4", Toast.LENGTH_SHORT).show()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
+    }
+
 }
