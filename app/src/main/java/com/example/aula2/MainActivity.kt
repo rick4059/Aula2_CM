@@ -3,6 +3,9 @@ package com.example.aula2
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.ActionMode
+import android.view.View
+import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
@@ -37,5 +40,11 @@ class MainActivity : AppCompatActivity() {
     override fun onRestart() {
         super.onRestart()
         println("life cicle: onRestart")
+    }
+
+    fun butao(view: View) {
+        var editText = findViewById<EditText>(R.id.input)
+        Toast.makeText(this, editText.text, Toast.LENGTH_LONG).show()
+        findViewById<TextView>(R.id.textview1).setText(editText.text)
     }
 }
