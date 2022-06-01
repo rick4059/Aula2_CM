@@ -1,8 +1,10 @@
 package com.example.aula2
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.ActionMode
+import android.widget.Button
 import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
@@ -14,28 +16,11 @@ class MainActivity : AppCompatActivity() {
         Toast.makeText(this, R.string.Welcome_Message, Toast.LENGTH_SHORT).show()
     }
 
-    override fun onStart() {
-        super.onStart()
-        println("life cicle: onStart")
-    }
+    val btn = findViewById<Button>(R.id.btn1)
 
-    override fun onPause() {
-        super.onPause()
-        println("life cicle: onPause")
-    }
 
-    override fun onStop() {
-        super.onStop()
-        println("life cicle: onStop")
-    }
+        val intent = Intent(this, MapsActivity::class.java)
+        startActivity(intent)
 
-    override fun onDestroy() {
-        super.onDestroy()
-        println("life cicle: onDestroy")
-    }
 
-    override fun onRestart() {
-        super.onRestart()
-        println("life cicle: onRestart")
-    }
 }
