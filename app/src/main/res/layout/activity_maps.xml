@@ -1,25 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android">
-    layout_width="match_parent"
-    android:layout_height="match_parent"
-
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <fragment xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:map="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/map"
-        android:name="com.google.android.gms.maps.SupportMapFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".MapsActivity" />
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity" />
 
     <TextView
-        android:id="@+id/txtcoordenadas"
+    android:id="@+id/txtcoordenadas"
+    android:layout_width="match_parent"
+    android:layout_height="100px"
+    android:layout_alignParentTop="true"
+        android:textSize="24dp"
+        android:background="@color/teal_700"
+    android:layout_margin="15dp"></TextView>
+
+    <TextView
+        android:id="@+id/txtmorada"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:textSize="24dp"
+        android:background="@color/teal_700"
         android:layout_margin="15dp"
         ></TextView>
 
+    <TextView
+        android:id="@+id/txtdistancia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtcoordenadas"
+        android:textSize="24dp"
+        android:background="@color/cardview_light_background"
+        android:layout_margin="15dp">
+    </TextView>
 </RelativeLayout>
+
+
+
 
